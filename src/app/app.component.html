@@ -19,11 +19,19 @@
 </ul>
 
 
-<zxing-scanner
+<!-- <zxing-scanner
     [scannerEnabled]="scannerEnabled"
     [autofocusEnabled]="autofocusEnabled"
     [device]="selectedDevice"
     [cssClass]="'small-video'"
-  
+    (camerasFound)="displayCameras($event)"
+    (scanSuccess)="handleQrCodeResult($event)" 
 ></zxing-scanner>
-
+ -->
+<zxing-scanner
+    [scannerEnabled]="true"
+    [autofocusEnabled]="true"
+    [device]="selectedDevice"
+    [cssClass]="'small-video'"
+    (camerasFound)="displayCameras($event)"
+></zxing-scanner>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  // scannerEnabled : boolean;
+  // autofocusEnabled : boolean;
+  //     selectedDevice: MediaDeviceInfo;
+
+  displayCameras(e) {
+      console.log(e);
+  }
+
 }
